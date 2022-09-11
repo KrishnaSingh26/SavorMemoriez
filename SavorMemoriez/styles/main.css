@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&family=Raleway:wght@400;500&display=swap');
+
+body,
+body * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body,
+.container,
+.row {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background: #11998e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
+}
+
+p:not(.slogan),
+.left,
+.icon,
+.icon-list,
+h1,
+.right,
+.mainInfo {
+  width: auto;
+}
+
+.container .row .left-wrap {
+  padding-right: 0;
+  padding-left: 0;
+  -webkit-filter: drop-shadow(15px 0px 10px rgba(50, 50, 0, 0.5));
+  filter: drop-shadow(15px 0px 10px rgba(50, 50, 0, 0.5));
+}
+
+.container .row .left-wrap .left {
+  background-image: url(../img/11.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  height: 100vh;
+  opacity: 0.98;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
+}
+
+@media screen and (max-width: 576px) {
+  .container .row .left-wrap .left {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+    height: 50vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+  }
+}
+
+.container .row .left-wrap .left p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 4em;
+  margin-right: 2em;
+  font-weight: bold;
+  color: #02ff00;
+}
+
+@media screen and (max-width: 576px) {
+  .container .row .left-wrap .left p {
+    font-size: 3.8em;
+    margin: 0.5em 0 0.5em 0;
+    -ms-flex-preferred-size: 10%;
+    flex-basis: 10%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .container .row .left-wrap .left p {
+    font-size: 3.8em;
+  }
+}
+
+.container .row .left-wrap .left p .small {
+  vertical-align: text-top;
+  font-size: 0.5em;
+}
+
+.container .right {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 576px) {
+  .container .right {
+    height: 50vh;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+.container .right .mainInfo {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+@media screen and (max-width: 576px) {
+  .container .right .mainInfo {
+    text-align: center;
+  }
+}
+
+.container .right .mainInfo h1 {
+  font-size: 3.5em;
+  text-align: center;
+  color: azure;
+  font-family: 'Raleway';
+  font-weight: bold;
+  background: -webkit-linear-gradient(#f22bd3, #bd2130);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container .right .mainInfo h3 {
+  font-size: 4.5em;
+  text-align: center;
+  color: azure;
+  font-weight: bold;
+  font-family: 'Qwitcher Grypen', cursive;
+   background: -webkit-linear-gradient(#000000, #ff0d4c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container .right .mainInfo h5 {
+  font-size: 1.5em;
+  text-align: center;
+  color: azure;
+  font-weight: bold;
+  font-family: 'Raleway';
+  background: -webkit-linear-gradient(#f22bd3, #bd2130);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 576px) {
+  .container .right .mainInfo h1 {
+    margin-left: 0;
+  }
+}
+
+.container .right .mainInfo .slogan {
+  width: 50vw;
+  margin-top: 1.5em;
+  color: white;
+  font-family: 'Raleway';
+  text-align: center;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 576px) {
+  .container .right .mainInfo .slogan {
+    width: auto;
+  }
+}
+
+
+
+.container .right .icon-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transform: translateY(-3em);
+  transform: translateY(-3em);
+}
+
+@media screen and (max-width: 576px) {
+  .container .right .icon-list {
+    -webkit-transform: translateY(-0.1em);
+    transform: translateY(-0.1em);
+    padding-left: 0;
+  }
+}
+
+.container .right .icon-list .icon {
+  margin-right: 1em;
+  font-size: 1.5em;
+}
+
+.container .right .icon-list .icon a {
+  color: black;
+  text-decoration: none;
+}
+
+.right,
+.mainInfo,
+.left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+h1,
+.slogan,
+button,
+.form {
+  font-family: 'Raleway', sans-serif;
+}
+.slogan,
+.form-subscribe {
+  margin-left: 2em;
+}
+
+@media screen and (max-width: 576px) {
+
+  .slogan,
+  .form-subscribe {
+    margin-left: auto;
+  }
+}
+
+.twitter::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f099";
+}
+
+.facebook::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f09a";
+}
+
+.instagram::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f16d";
+}
+
+.github::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f09b";
+}
+
+.stackoverflow::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f16c";
+}
+
+.youtube::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f167";
+}
+
+.linkedin::before {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f08c";
+}
